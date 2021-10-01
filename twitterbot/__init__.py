@@ -16,7 +16,7 @@ auth = tweepy.OAuthHandler(Var.CONSUMER_KEY, Var.CONSUMER_SECRET)
 auth.set_access_token(Var.ACCESS_TOKEN, Var.ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
-REPO = "https://telegram.me/xDune"
+REPO = "https://telegram.me/xDuneBot"
 TLOGO = "https://telegra.ph/file/100381c981fc9f4164d31.jpg"
 
 HELP_MARKUP = InlineKeyboardMarkup(
