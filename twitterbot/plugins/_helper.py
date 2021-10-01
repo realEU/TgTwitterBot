@@ -32,7 +32,7 @@ async def _andshow(client, query):
         url=REPO,
         input_message_content=InputTextMessageContent("Leave It Already!"), 
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="@xDuneBot",url=REPO)]]))
-    await query.answer([res], switch_pm_text="Fuck Off!😊",
+    await query.answer([res], switch_pm_text="Fuck Off! 😊",
                        switch_pm_parameter="start")
 
 
