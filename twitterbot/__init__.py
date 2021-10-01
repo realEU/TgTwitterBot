@@ -29,4 +29,4 @@ HELP_MARKUP = InlineKeyboardMarkup(
      [Button(text="Search Tweets",
              switch_inline_query_current_chat="search quote")],
      [Button(text="Search User",
-             switch_inline_query_current_chat="user")]])
+             switch_inline_query_current_chat="user TeamMessi")]])
