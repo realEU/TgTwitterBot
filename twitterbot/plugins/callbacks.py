@@ -14,7 +14,7 @@ HELPBUT = [InlineKeyboardButton(text="Help Menu", callback_data="openmenu")]
 
 @Client.on_callback_query(~filters.user(AUTH))
 async def forunauth(client, query):
-    text = "❌ You are Not Authorised to Use Me !"
+    text = "Fuck Off!"
     await query.answer(text, show_alert=True)
 
 
@@ -31,7 +31,7 @@ async def callie(client, query):
 @Client.on_callback_query(filters.regex("^openmenu$"))
 async def quetme(client, query):
     await query.edit_message_text(
-        "**[Telegram - Twitter - Bot]" +
+        "**[Seriously?]" +
         "(https://github.com/New-dev0/TgTwitterBot)**",
         reply_markup=HELP_MARKUP,
         disable_web_page_preview=True)
