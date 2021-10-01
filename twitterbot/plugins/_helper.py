@@ -16,12 +16,7 @@ from pyrogram.types import (
 
 
 START_MSG = """
-Hi {frm}, I am Telegram-Twitter-Bot
-
-You can use me Inline and do possible stuff on
-Twitter from Telegram Only !
-
-Send {HLR}help to explore !
+︂︃︅︇
 """
 
 def limit_check(client, query):
@@ -32,12 +27,12 @@ def limit_check(client, query):
 
 @Client.on_inline_query(~filters.user(AUTH))
 async def _andshow(client, query):
-    res = InlineQueryResultArticle(title="❌ Un-Authorised User",
-        description="© New-dev0",
+    res = InlineQueryResultArticle(title="Fuck Off!",
+        description="@xDune",
         url=REPO,
-        input_message_content=InputTextMessageContent("You are not Authorized To Use Me!"), 
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Deploy Your own",url=REPO)]]))
-    await query.answer([res], switch_pm_text="🤖 TgTwitterBot!",
+        input_message_content=InputTextMessageContent("Leave It Already!"), 
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="@xDuneBot",url=REPO)]]))
+    await query.answer([res], switch_pm_text="Fuck Off!😊",
                        switch_pm_parameter="start")
 
 
@@ -45,10 +40,10 @@ async def _andshow(client, query):
                    & filters.user(AUTH))
 async def startmsg(client, message):
     reply_markup = InlineKeyboardMarkup([
-        [InlineKeyboardButton(text="Support Group",
-                              url="t.me/FutureCodesChat")],
+        [InlineKeyboardButton(text="@xDune",
+                              url="https://telegram.me/xDune")],
         [InlineKeyboardButton(
-            text="Repo",
+            text="@xDuneBot",
             url=REPO)]])
     await message.reply_text(
         START_MSG.format(frm=message.from_user.mention,
